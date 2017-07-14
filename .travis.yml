@@ -17,6 +17,8 @@ sudo: required
 addons:
   sonarcloud:
     organization: "lounick-github"
+    branches :
+      - sonarcloud-integration
     token: $SONAR_TOKEN
 script:
   - build-wrapper-linux-x86-64 --out-dir bw-output make clean all
